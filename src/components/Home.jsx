@@ -12,7 +12,7 @@ function Home() {
 
             <div className='flex grow overflow-auto'>
                 <div className="left-container bg-black "><LeftSidebar /></div>
-                <div className="right-container bg-gradient-to-b from-red-600  w-full overflow-auto touch-auto h-full"><RightSidebar />
+                <div className="right-container  bg-gray-600 w-full overflow-auto touch-auto h-full"><RightSidebar/>
                     <PlayList />
                 </div>
             </div>
