@@ -20,20 +20,14 @@
 }
 
 .left-sidbar-icon {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .right-container {
   width: 87%;
 }
 
-.left-sidbar-add-icon {
-  font-size: 2rem;
-}
 
-.left-sidbar-like-icon {
-  font-size: 2rem;
-}
 
 .rigth-bar {
   height: 25rem;
@@ -78,6 +72,7 @@
 .play-list {
   display: flex;
   gap: 3rem;
+  /* align-items: center; */
   padding: 1rem;
 }
 

@@ -10,11 +10,11 @@ import { MdPhonelink } from 'react-icons/md'
 import useMusicPlayer from '../hooks/useMusicPlayer'
 
 const calculateTime = (secs) => {
-    const minutes = Math.floor(secs / 60);
-    const returnedMinutes = minutes < 10 ? `0${minutes}` : `${minutes}`;
-    const seconds = Math.floor(secs % 60);
-    const returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
-    return `${returnedMinutes}:${returnedSeconds}`;
+    const minutes = Math.floor(secs / 60); // 175/60 =2.9 ,2
+    const returnedMinutes = minutes < 10 ? `0${minutes}` : `${minutes}`; // 3 < 10 = 2
+    const seconds = Math.floor(secs % 60); // 175 % 60 = 55
+    const returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`; //55 < 10 = 55
+    return `${returnedMinutes}:${returnedSeconds}`; // 2:55
 };
 function Footer() {
 
@@ -40,13 +40,11 @@ function Footer() {
             }
         }
     }, [music.isPlaying])
-
-    console.log("  nnnkm", music.currentTrackId)
     return (
         <>
             <div className='footer_container bg-slate-900 text-white flex justify-between'>
                 <div className='footer-songs-details'>
-                    <img className="footer-songs-img" src={music.currentTrackImg} alt='Loding...' />
+              {music.currentTrackImg ?<><img className="footer-songs-img" src={music.currentTrackImg} alt='Loding...' /></>:<div className='text-2xl my-auto'>play songs</div>}
                     <div className=''>
                         <div className='footer-songs-name px-4'>{music.currentTrackName}</div>
                         <div className='footer-songs-name px-4'>{music.currentTrackTitle}</div>

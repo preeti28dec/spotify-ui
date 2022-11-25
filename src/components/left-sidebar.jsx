@@ -5,7 +5,7 @@ import { VscLibrary } from 'react-icons/vsc'
 import { BiHeartSquare } from 'react-icons/bi'
 
 function LeftSidebar() {
-    const data = ["jdskfk","sgfkwgakw","sehgvefkvs","sdjgkgsk","shgfkgfk","jdskfk","sgfkwgakw","sehgvefkvs","sdjgkgsk"]
+    const data = ["playlist1","playlist2","playlist3","playlist4","playlist5","playlist6","playlist7","playlist8"]
     return (
         <div className='grid '>
             <header className="text-gray-400  body-font">
@@ -39,11 +39,11 @@ function LeftSidebar() {
             </div>
             <div className='p-5  text-white'>
                 <a href='#' className="flex title-font font-medium items-center text-white  mb-4">
-                    <CgAddR className='left-sidbar-add-icon' />
+                    <CgAddR className='left-sidbar-icon' />
                     <span className=" flex title-font font-medium items-center text-white ml-3">Create Playlist</span>
                 </a>
                 <a href='#' className="flex title-font font-medium items-center text-white  mb-4">
-                    <BiHeartSquare className='left-sidbar-like-icon' />
+                    <BiHeartSquare className='left-sidbar-icon' />
                     <span className=" flex title-font font-medium items-center text-white ml-3">Liked Songs</span>
                 </a>
             </div>
